@@ -1,0 +1,56 @@
+\documentclass[a4paper,12pt,ngerman]{report}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
+\usepackage[german=quotes]{csquotes}
+\usepackage{microtype}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{acronym}
+\usepackage{glossaries}
+\usepackage[onehalfspacing]{setspace}
+\usepackage{titlesec}
+\usepackage[backend=biber, autocite=inline, style=numeric, sorting=none]{biblatex}
+\usepackage[hidelinks]{hyperref}
+
+
+\addbibresource{bibliography.bib}
+
+\title{[TITEL DER SKRIPTE]}
+\author{[IHR NAME]}
+\date{\today}
+
+\begin{document}
+	
+	\pagenumbering{Alph}
+	\maketitle
+	\thispagestyle{empty}
+	
+	\pagenumbering{Roman}
+	\tableofcontents
+	
+	\cleardoublepage
+	\pagenumbering{arabic}
+	\setcounter{page}{1}
+	
+	\chapter{[KAPITEL 1 TITEL]}
+	Dieses Kapitel enthält Beispiele für Zitationen. 
+	
+	Das Buch "The TeXbook" von Donald E. Knuth ist ein Standardwerk für TeX-Anwender \autocite{knuth1984}.
+	
+	Leslie Lamport, der Erfinder von LaTeX, beschreibt in seinem Artikel die Grundlagen des Textsatzsystems \autocite{lamport1994}.
+	
+	\chapter{[KAPITEL 2 TITEL]}
+	[INHALT KAPITEL 2]
+	
+	\chapter{[KAPITEL 3 TITEL]}
+	[INHALT KAPITEL 3]
+	
+	\printbibliography
+	
+\end{document}
